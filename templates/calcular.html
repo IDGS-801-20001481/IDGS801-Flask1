@@ -1,0 +1,31 @@
+{% extends "layaout.html" %}
+{%block content %}
+<div class="container">
+    <form class="form-horizontal" name="form1" accept="/resultado" method="post"></form>
+    <div class="row">
+        <div class="control-group">
+            <label form="text1" class="control-label">Numero 1</label>
+            <div class="controls">
+                <input type="text" name="text1" placeholder="Numero1" value="">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="control-group">
+            <label form="text2" class="control-label">Numero 2</label>
+            <div class="controls">
+                <input type="text" name="text2" placeholder="Numero2" value="">
+            </div>
+        </div>
+    </div>
+
+    <div class="control-group"> 
+        <div class="controls">
+            <button type="submit" class="btn btn-default btn-primary">
+                <i class="icon-book icon-white"></i> Calcular
+            </button>
+        </div>
+    </div>
+</form>
+</div>
+{%endblock%}
